@@ -17,7 +17,7 @@ import java.util.Map;
 @RestControllerAdvice(annotations = RestController.class, basePackages = "org.anonymous")
 public class CommonControllerAdvice {
 
-    private final Utils utils;
+    private final Utils utils; ////
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<JSONData> errorHandler(Exception e) {
